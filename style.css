@@ -1,0 +1,196 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+}
+
+/*==========
+ PC用スタイル
+ ===========*/
+@media screen and (min-width:768px) {
+
+    /* 横幅設定 */
+    body {
+        /*max-width: 1080px;*/
+        min-width: 960px;
+        margin: 0 auto 0 auto;
+    }
+
+    /* ヘッダー */
+    header {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px auto 20px auto;
+    }
+
+    #logo {
+        font-size: 34px;
+        font-weight: bold;
+        border: 1px;
+        border-style: solid;
+        padding: 10px 30px 10px 30px;
+    }
+
+    #nav-pc {
+        align-self: center;
+        font-size: 34px;
+        font-weight: bold;
+    }
+
+    #nav-pc > a {
+        text-decoration: none;
+        color: #000000;
+        margin-right: 30px;
+    }
+
+    /* メインビジュアル */
+    #main-image {
+        width: 100%;
+    }
+
+    .index-h1 {
+        font-size: 34px;
+        text-align: center;
+    }
+
+    #about,#works {
+        margin: 90px auto 0 auto;
+    }
+
+    /* About */
+    #about > div {
+        display: flex;
+        justify-content: center;
+    }
+
+    #about-photo {
+        border-radius: 50%;
+    }
+
+    #about-detail {
+        margin-left: 80px;
+        align-self: center;
+    }
+    #about-detail > span {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    /* Works */
+    #works > div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .photo-explain {
+        position: relative;
+        width: 240px;
+        margin: 10px;
+    }
+
+    .photo-explain > img {
+        width: 100%;
+    }
+
+
+    /* フッター */
+    footer {
+        text-align: center;
+        margin: 50px auto 30px auto;
+    }
+
+}
+
+/*==========
+ スマホ用スタイル
+ ===========*/
+ @media screen and (max-width:767px) {
+    body {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+    }
+
+    #logo {
+        font-size: 18px;
+        font-weight: bold;
+        border: 1px;
+        border-style: solid;
+        padding: 5px 10px 5px 10px;
+    }
+
+    #nav-pc {
+        display: flex;
+        align-self: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #nav-pc > a {
+        text-decoration: none;
+        color: #000000;
+        margin-right: 10px;
+    }
+
+    /* メインビジュアル */
+    #main-image {
+        width: 100%;
+    }
+
+    .index-h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #about,#works {
+        margin: 30px 20px 0 20px;
+    }
+
+    /* About */
+    #about > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #about-photo {
+        border-radius: 50%;
+        width: 30%;
+        margin-bottom: 20px;
+    }
+
+    #about-detail {
+        align-self: center;
+        margin-left: 20px;
+    }
+
+    #about-detail > span {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    /* Works */
+    .photo-explain {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .photo-explain > img {
+        width: 100%;
+    }
+
+    .photo-explain > p {
+        margin: 0;
+    }
+
+    /* フッター */
+    footer {
+        text-align: center;
+        margin: 50px auto 30px auto;
+    }
+ }
